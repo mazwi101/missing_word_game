@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[243]:
-
 
 from words import words
 from alphabets import alphabets
@@ -37,7 +35,6 @@ def hangman():
     word = '.'.join(word_choice[0])
     missing_word = missingWord(word_length)
     randomized_word = random.sample(word_choice[1], len(word_choice[1]))
-    #print(randomized_word)
     print('Welcome to the game of Hangman built by Mfanafuthi \nThis game of hangman has no rules!! ')
     print(f"From the following letters '{' '.join(randomized_word)}', choose a letter!\n\n\n")
     print(f"Here is your clue:{missing_word}")
@@ -52,23 +49,8 @@ def hangman():
 def hangman_game():
     compare_words = hangman()
     if (compare_words[0]==compare_words[1]):
-        print('Suprise motherfucker!!')
+        print('You guessed the word right!!')
     else:
         print('You are not good with words are you?')
 
-
-          
-
-
-# In[244]:
-
-
-hangman_game()
-
-
-# In[212]:
-
-
-namess = namess.replace('-','B',1)
-namess
 
